@@ -37,7 +37,7 @@ static void follow_line(context* ctx)
             }
 
             if((ctx->pixy_vector.m0_x0 != ctx->pixy_vector.m0_x1) && ((y > 0.0) || (y <0.0))) {
-                steer = -angular_velocity * (x / y) * single_line_steer_scale;
+                steer = angular_velocity * (x / y) * single_line_steer_scale;
             } else {
                 steer = 0.0;
             }
